@@ -12,9 +12,11 @@
 
 Добавляем в /company/personal.php, такой код:
 
+
 ```php
 $userID = $USER->GetID();
 if ($APPLICATION->GetCurDir() == '/company/personal/user/' . $userID . '/tasks/') {
 	include($_SERVER['DOCUMENT_ROOT'] . '/local/scripts/notification.php');
 }
 ```
+
